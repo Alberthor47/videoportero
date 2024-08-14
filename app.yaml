@@ -9,7 +9,7 @@ env_variables:
 
 handlers:
   - url: /.*
-    static_files: dist/index.html
-    upload: dist/index.html
+    static_files: public/index.html
+    upload: public/index.html
   - url: /
     static_dir: dist
