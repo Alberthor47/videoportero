@@ -17,7 +17,7 @@ let options = {
 // Retrieve the token from backend
 function fetchToken() {
   return new Promise(function (resolve) {
-      axios.get(`${process.env.BASE_URL}/rtcToken?channelName=${options.channel}`)
+      axios.get(`${process.env.API_URL}/rtcToken?channelName=${options.channel}`)
           .then(function (response) {
               console.log("AQUI LA RESPUESTA",response);
               options.token = response.data.token;

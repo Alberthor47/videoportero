@@ -9,7 +9,7 @@ VideoPortero is a project that aims to create a video intercom system using mode
 3. Install the necessary dependencies: `npm install`
 4. Make sure you have a `.env` file in the root of the project with the following environment variables:
    - `AGORA_APP_ID`: The App ID of the Agora project.
-   - `BASE_URL`: The base URL of the server.
+   - `API_URL`: The base URL of the server.
 
 ## Usage
 

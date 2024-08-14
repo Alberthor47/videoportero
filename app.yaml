@@ -5,7 +5,7 @@ instance_class: F1
 env_variables:
   NODE_ENV: 'production'
   AGORA_APP_ID: '21d9ee608caf4759a3979c521072e6c6'
-  BASE_URL: 'https://videoporterotest.wl.r.appspot.com'
+  API_URL: 'https://videoporterotest.wl.r.appspot.com'
 
 handlers:
   - url: /.*
