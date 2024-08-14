@@ -19,7 +19,7 @@ module.exports = {
     mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
     plugins: [
         new webpack.DefinePlugin({
-            'process.env': JSON.stringify(dotenv.config().parsed || {})
+            'process.env': JSON.stringify(dotenv.config().parsed)
         }),
         new HtmlWebpackPlugin({
           template: './index.html'
