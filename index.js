@@ -1,6 +1,8 @@
 import AgoraRTC from "agora-rtc-sdk-ng";
 import axios from "axios";
 
+console.log("ENVS", process.env, process.env.AGORA_APP_ID, process.env.API_URL);
+
 let rtc = {
     localAudioTrack: null,
     localVideoTrack: null,
