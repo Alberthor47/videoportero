@@ -1,8 +1,6 @@
 import AgoraRTC from "agora-rtc-sdk-ng";
 import axios from "axios";
 
-console.log("ENVS", process.env, process.env.AGORA_APP_ID, process.env.API_URL);
-
 let rtc = {
     localAudioTrack: null,
     localVideoTrack: null,
@@ -10,7 +8,8 @@ let rtc = {
 };
 
 let options = {
-    appId: process.env.AGORA_APP_ID,
+    // appId: process.env.AGORA_APP_ID,
+    appId: '21d9ee608caf4759a3979c521072e6c6',
     channel: "primaryChannel",
     token: null,
     uid: null,
@@ -19,7 +18,8 @@ let options = {
 // Retrieve the token from backend
 function fetchToken() {
   return new Promise(function (resolve) {
-      axios.get(`${process.env.API_URL}/rtcToken?channelName=${options.channel}`)
+      // axios.get(`${process.env.API_URL}/rtcToken?channelName=${options.channel}`)
+      axios.get(`https://videoporterotest.wl.r.appspot.com/rtcToken?channelName=${options.channel}`)
           .then(function (response) {
               console.log("AQUI LA RESPUESTA",response);
               options.token = response.data.token;
